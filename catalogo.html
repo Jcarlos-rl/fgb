@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Global Broker</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="" style="position: fixed; z-index:100; background-color: white; height: 83px">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="logo" src="images/logo.png" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large-and-down"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down hide-on-large-only show-on-extra-large">
+                    <li><a class="azul-text font-fgb nav-font-size" href="#home">HOME</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="#nosotros">NOSOTROS</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size dropdown-trigger" data-target="dropdown1" href="#">CATALOGO <i style="margin-left:0;margin-top:-2px" class="material-icons right">expand_more</i></a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="#contacto">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="font-fgb" href="#!">Marca 1</a></li>
+        <li><a class="font-fgb" href="#!">Marca 2</a></li>
+    </ul>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#">CATALOGO</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+    <section>
+        <img class="responsive-img" src="images/img2.jpg" alt="">
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/hilti.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">HILTI</span>
+                        <p><a href="pdf/GUIA_RAPIDA_HILTI.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/knipex.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">KNIPEX</span>
+                        <p><a class="dropdown-trigger"  data-target="dropdown2" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
+                    </div>
+                </div>
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/camso.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-4">CAMSO</span>
+                        <p><a href="pdf/MH-Catalogo-2018-MX.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer" style="background-color: #141939">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer</h5>
+                    <p class="grey-text text-lighten-4">Sunt mollit exercitation non aliquip aute excepteur nisi ex duis qui.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Más Links</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <!--<script src="js/nav.js"></script>-->
+</body>
+</html>
