@@ -45,6 +45,28 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
     border-bottom: 1px solid #141939 !important;
     box-shadow: 0 1px 0 0 #141939 !important
 }
-.row .col{
-    /*padding-left: 0;*/
+.service1{
+    height: 280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url('../images/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mas{
+    background: white;
+    color: #141939;
+    padding: 10px 0 10px 30px;
+    display: block;
+    font-size: 19px;
+}
+.hover:hover .mas{
+    background: #141939;
+    color: white;
+}
+.nosotros{
+    background-image: url('../images/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }

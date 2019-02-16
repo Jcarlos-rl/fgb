@@ -17,5 +17,4 @@ $(document).ready(function(){
 });
 
 //dropdown
-$('.dropdown-trigger').dropdown();
-      
+$('.dropdown-trigger').dropdown();    
