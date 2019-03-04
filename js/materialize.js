@@ -18,3 +18,7 @@ $(document).ready(function(){
 
 //dropdown
 $('.dropdown-trigger').dropdown();    
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+});

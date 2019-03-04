@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
     <title>First Global Broker</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,91 +19,232 @@
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large-and-down"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down hide-on-large-only show-on-extra-large">
-                    <li><a class="azul-text font-fgb nav-font-size" href="index.html">HOME</a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="#nosotros">NOSOTROS</a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="catalogo.html">CATALOGO <i style="margin-left:0;margin-top:-2px" class="material-icons right">expand_more</i></a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="#contacto">CONTACTO</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="index.html#home">HOME</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="index.html#nosotros">NOSOTROS</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="catalogo.html">CATÁLOGO</a></li>
+                    <li><a class="azul-text font-fgb nav-font-size" href="index.html#contacto">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <ul id='dropdown1' class='dropdown-content'>
-        <li><a class="font-fgb" href="#!">Marca 1</a></li>
-        <li><a class="font-fgb" href="#!">Marca 2</a></li>
-    </ul>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#nosotros">NOSOTROS</a></li>
-        <li><a href="#">CATALOGO</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <!--<li><a href="#home">HOME</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>-->
+        <li><a class="font-fgb" href="index.html">CATALOGO</a></li>
+        <li><a class="font-fgb" href="contacto.html">CONTACTO</a></li>
     </ul>
-    <section>
-        <img class="responsive-img" src="images/img2.jpg" alt="">
-    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/header.jpg"></div>
+        <h2 style="padding-top: 100px" class="center white-text font-fgb">Somos distribuidores autorizados de:</h2>
+    </div>
+    <div style="height:30px"></div>
     <div class="container">
         <div class="row">
-            <div class="col m4">
+            <div class="col m2">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/hilti.jpg">
+                        <img class="activator" src="images/hilti.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">HILTI</span>
-                        <p><a href="pdf/GUIA_RAPIDA_HILTI.pdf">Ver catálogo</a></p>
+                        <!--<span class="grey-text text-darken-4 font-fgb titulo-catalogo">HILTI</span>-->
+                        <p><a target="_blanck" href="pdf/HILTI.pdf" class="font-fgb">Ver catálogo</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col m4">
+            <div class="col m2">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/knipex.jpg">
+                        <img class="activator" src="images/knipex.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">KNIPEX</span>
-                        <p><a class="dropdown-trigger"  data-target="dropdown2" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">KNIPEX</span>-->
+                        <p><a class="dropdown-trigger font-fgb" class="font-fgb"  data-target="knipex" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
                     </div>
                 </div>
-                <ul id="dropdown2" class="dropdown-content">
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li><a href="#!">three</a></li>
+                <ul id="knipex" class="dropdown-content">
+                    <li><a class="font-fgb" target="_blanck" href="pdf/CatalogoGeneral.pdf">Catálogo General</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoAutomovil.pdf">Surtido Automóvil</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/Herramientas.pdf">Herramientas</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/HerramientasAisladas.pdf">Herramientas Aisladas</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/Novedades2018.pdf">Novedades 2018</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/ProductosSeleccionados.pdf">Productos Seleccionados</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoAgricultura.pdf">Surtido Agricultura</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoCalefaccion_Sanitario.pdf">Surtido Calefacción/Sanitario</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoCompleto.pdf">Surtido Completo</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoConstruccion.pdf">Surtido Construcción</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SurtidoIndustrial.pdf">Surtido Industrial</a></li>
+                    <li><a class="font-fgb" target="_blanck" href="pdf/SustidoElectrico.pdf">Sustido Eléctrico</a></li>
                 </ul>
             </div>
-            <div class="col m4">
+            <div class="col m2">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/camso.jpg">
+                        <img class="activator" src="images/solideal.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title grey-text text-darken-4">CAMSO</span>
-                        <p><a href="pdf/MH-Catalogo-2018-MX.pdf">Ver catálogo</a></p>
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">SOLIDEAL</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Solideal.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/BGS.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">BGS</span>-->
+                        <p><a class="dropdown-trigger font-fgb"  data-target="bgs" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
+                    </div>
+                </div>
+            </div>
+            <ul id="bgs" class="dropdown-content">
+                <li><a class="font-fgb" target="_blanck" href="pdf/BGSESP.pdf">BGS technic (ES)</a></li>
+                <li><a class="font-fgb" target="_blanck" href="pdf/BGSENG.pdf">BGS technic (EN)</a></li>
+            </ul>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/loctite.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">LOCTITE</span>-->
+                        <p><a class="dropdown-trigger font-fgb" data-target="loctite" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
+                    </div>
+                </div>
+            </div>
+            <ul id="loctite" class="dropdown-content">
+                <li><a class="font-fgb" target="_blanck" href="pdf/CatalogoGeneralLoctite.pdf">Catálogo general</a></li>
+                <li><a class="font-fgb" target="_blanck" href="pdf/ReparacionMantenimientoVehiculos.pdf">Reparación y Mantenimiento de Vehículos</a></li>
+                <li><a class="font-fgb" target="_blanck" href="pdf/TheAdhesiveSourcebook.pdf">The Adhesive Sourcebook</a></li>
+            </ul>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/cleveland.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">CLEVELAND</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Cleveland.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/hhw.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">HHW</span>-->
+                        <p><a class="dropdown-trigger font-fgb" data-target="hhw" href="#">Ver catálogo <i class="material-icons left">arrow_drop_down</i></a></p>
+                    </div>
+                </div>
+            </div>
+            <ul id="hhw" class="dropdown-content">
+                <li><a class="font-fgb" target="_blanck" href="pdf/HHW1.pdf">HHW parte 1</a></li>
+                <li><a class="font-fgb" target="_blanck" href="pdf/HHW2.pdf">HHW parte 2</a></li>
+            </ul>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/kimberly_clark.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">KIMBERLY CLARK</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Kimberly.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/urrea.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">URREA</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/URREA.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/surtek.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">SURTEK</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/SURTEK.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/lock.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">LOCK</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/LOCK.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/brady.png">
+                    </div>
+                    <div class="card-content">
+                        <!--<span class="titulo-catalogo grey-text text-darken-4 font-fgb">BRADY</span>-->
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Brady.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/tuk.png">
+                    </div>
+                    <div class="card-content">
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Tuk.pdf">Ver catálogo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/colson.png">
+                    </div>
+                    <div class="card-content">
+                        <p><a class="font-fgb" target="_blanck" href="pdf/Colson.pdf">Ver catálogo</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="page-footer" style="background-color: #141939">
+    <footer class="page-footer foo">
+        <hr style="border-top: 2px solid #141939;">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer</h5>
-                    <p class="grey-text text-lighten-4">Sunt mollit exercitation non aliquip aute excepteur nisi ex duis qui.</p>
+                    <h5 class="black-text font-fgb">FIRST GLOBAL BROKER</h5>
+                    <p class="black-text text-lighten-4 font-fgb">Contácto</p>
+                    <p class="black-text text-lighten-4 font-fgb">Tel. 01 (222) 231 1972</p>
+                    <p class="black-text text-lighten-4 font-fgb">ventas@fgbmexico.com</p>
+                    <a href="https://www.facebook.com/FGBMEXICO/" target="_blanck">
+                            <img src="images/fb.png" style="width:20px" alt="">
+                        </a>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2019 Copyright
-                <a class="grey-text text-lighten-4 right" href="#!">Más Links</a>
+                <span class="font-fgb black-text">© 2019 Copyright</span>
             </div>
         </div>
     </footer>
