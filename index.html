@@ -11,51 +11,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="home" class="container" style="position:absolute; z-index: 20;">
-        <div style="height:50px"></div>
-        <div style="padding-left:15%;" class="row">
-            <div class="col m4">
-                <img src="images/logo.png" style="width:300px" alt="">
+    <div class="navbar-fixed">
+        <nav class="" style="background-color: white; height: 83px">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">
+                        <img class="logo" src="images/logo.png" alt="">
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large-and-down"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down hide-on-large-only show-on-extra-large">
+                        <li><a class="azul-text font-fgb nav-font-size" href="index.html#home">HOME</a></li>
+                        <li><a class="azul-text font-fgb nav-font-size" href="index.html#nosotros">NOSOTROS</a></li>
+                        <li><a class="azul-text font-fgb nav-font-size" href="catalogo.html">CATÁLOGO</a></li>
+                        <li><a class="azul-text font-fgb nav-font-size" href="index.html#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div style="height:50px"></div>
+        </nav>
     </div>
-    <nav class="" style="position: absolute; z-index: 100; margin-top: 200px; background-color: white; height: 83px">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo">
-                    <img style="display:none" class="logo" src="images/logo.png" alt="">
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large-and-down"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down hide-on-large-only show-on-extra-large">
-                    <li><a class="azul-text font-fgb nav-font-size" href="#home">HOME</a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="#nosotros">NOSOTROS</a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="catalogo.html">CATÁLOGO</a></li>
-                    <li><a class="azul-text font-fgb nav-font-size" href="#contacto">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </div>
-    <ul id='dropdown1' class='dropdown-content'>
-        <li><a class="font-fgb" href="#!">Marca 1</a></li>
-        <li><a class="font-fgb" href="#!">Marca 2</a></li>
-    </ul>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#home">HOME</a></li>
         <li><a href="#nosotros">NOSOTROS</a></li>
         <li><a href="catalogo.html">CATALOGO</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
     </ul>
-    <div style="padding-top:200px">
+    <div>
         <div id="home" class="slider">
             <div class="slider">
                 <ul class="slides">
                     <li>
                         <img src="images/img5.jpg"> 
-                        <div class="caption center-align" style="margin-top: 180px;">
+                        <div class="caption center-align" style="margin-top: 150px;">
                             <h3 class="right-align font-fgb">Más que un Broker...</h3>
-                            <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+                            <h3 class="right-align font-fgb">Brindamos soluciones rápidas a tus necesidades</h3>
                         </div>
                     </li>
                     <li>
@@ -80,40 +68,6 @@
             </div>
         </div>
         <div style="height:30px"></div>
-        <!--<div class="container">
-            <h2 class="center">Nisi sunt in</h2>
-            <br>
-            <div class="row">
-                <div class="hover col m6">
-                    <div class="service1">
-                        <br>
-                        <h2 class="white-text">Aliquip</h2>
-                        <div class="row">
-                            <div class="col m9">
-                                <p class="white-text">Duis ut deserunt tempor labore ullamco sint sit et anim ea.</p>
-                            </div>
-                            <div class="col m3">
-                                <a href="" class="mas"><i class="small material-icons">chevron_right</i></a>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-                <div class="hover col m6">
-                    <div class="service1">
-                        <br>
-                        <h2 class="white-text">Aliquip</h2>
-                        <div class="row">
-                            <div class="col m9">
-                                <p class="white-text">Duis ut deserunt tempor labore ullamco sint sit et anim ea.</p>
-                            </div>
-                            <div class="col m3">
-                                <a href="" class="mas"><i class="small material-icons">chevron_right</i></a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>-->
         <div id="nosotros" style="height:50px"></div>
         <div class="nosotros">
             <div class="row">
@@ -213,6 +167,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/nav.js"></script>
 </body>
 </html>
